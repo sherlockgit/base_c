@@ -11,5 +11,6 @@ file(GLOB_RECURSE files "${CMAKE_CURRENT_SOURCE_DIR}/*.c")
 list(FILTER files EXCLUDE REGEX ".*/(build|CMakeFiles)/.*")
 foreach (file ${files})
     get_filename_component(name ${file} NAME)
-    add_executable(${name} ${file})
+    add_executable(${name} ${file}
+            src/chapter05/02_01_factorial.c)
 endforeach()
