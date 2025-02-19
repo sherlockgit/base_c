@@ -17,10 +17,11 @@ int main(void) {
     int **pp = &p; // 指针存的变量是另外一个指针变量的地址
     printf("%x\n", &p);
     printf("%x\n", pp);
+    printf("**pp %x\n", *pp);
 
-    printf("%d\n", a);
-    printf("%d\n", *p);
-    printf("%d\n", **pp);
+    printf("a %d\n", a);
+    printf("*p %d\n", *p);
+    printf("**pp %d\n", **pp);
     return 0;
 
 }
