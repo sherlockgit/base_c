@@ -6,7 +6,7 @@
 
 
 void ReadFile(FILE *file) {
-    int next_char = getc(file);
+    int next_char = getc(file);// 逐字符读取文件
     while (next_char != EOF) {
         putchar(next_char);
         next_char = getc(file);
